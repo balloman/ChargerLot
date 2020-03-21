@@ -9,4 +9,10 @@
       <PackageReference Include="Google.Cloud.Firestore" Version="1.1.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="chargerlot-service-key.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>
