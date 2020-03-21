@@ -1,4 +1,6 @@
 ﻿using System;
+using FirebaseAdmin;
+using Google.Apis.Auth.OAuth2;
 using Google.Cloud.Firestore;
 
 namespace ChargerLotLib.Handlers
@@ -13,6 +15,10 @@ namespace ChargerLotLib.Handlers
         
         private FirestoreHandler()
         {
+            var fb = FirebaseAdmin.FirebaseApp.Create(new AppOptions()
+            {
+                Credential = GoogleCredential.FromFile("chargerlot-service-key.json")
+            });
             _db = FirestoreDb.Create("chargerlot");
             Console.WriteLine("Created Cloud Firestore client with project ID: chargerlot");
         }

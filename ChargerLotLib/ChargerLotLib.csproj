@@ -5,6 +5,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="FirebaseAdmin" Version="1.9.2" />
       <PackageReference Include="Google.Cloud.Firestore" Version="1.1.0" />
     </ItemGroup>
 

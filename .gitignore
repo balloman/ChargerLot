@@ -600,3 +600,4 @@ fabric.properties
 
 #Ensures we don't put that everywhere lol
 google-services.json
+chargerlot-service-key.json
