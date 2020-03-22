@@ -5,14 +5,17 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="FirebaseAdmin" Version="1.9.2" />
-      <PackageReference Include="Google.Cloud.Firestore" Version="1.1.0" />
+      <None Remove="chargerlot-service-key.json" />
     </ItemGroup>
 
     <ItemGroup>
-      <None Update="chargerlot-service-key.json">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </None>
+      <EmbeddedResource Include="chargerlot-service-key.json" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FirebaseAdmin" Version="1.9.2" />
+      <PackageReference Include="Google.Cloud.Firestore" Version="1.1.0" />
+      <PackageReference Include="Xamarin.Essentials" Version="1.5.1" />
     </ItemGroup>
 
 </Project>

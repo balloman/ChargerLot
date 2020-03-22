@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ChargerLotLib.Models
 {
@@ -8,5 +9,6 @@ namespace ChargerLotLib.Models
         public double Full { get; set; }
         public DateTime Timestamp { get; set; }
         public Lot Lot { get; set; }
+        public List<ParkingReport> Reports { get; set; }
     }
 }

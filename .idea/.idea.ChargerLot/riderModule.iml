@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="RIDER_MODULE" version="4">
   <component name="NewModuleRootManager">
+    <content url="file://C:/Microsoft/Xamarin/NuGet/xamarin.android.arch.lifecycle.runtime/1.1.1.3/proguard/monoandroid90/proguard.txt" />
+    <content url="file://C:/Microsoft/Xamarin/NuGet/xamarin.android.arch.lifecycle.viewmodel/1.1.1.3/proguard/monoandroid90/proguard.txt" />
+    <content url="file://C:/Microsoft/Xamarin/NuGet/xamarin.android.support.compat/28.0.0.3/proguard/monoandroid90/proguard.txt" />
+    <content url="file://C:/Microsoft/Xamarin/NuGet/xamarin.android.support.coordinaterlayout/28.0.0.3/proguard/monoandroid90/proguard.txt" />
+    <content url="file://C:/Microsoft/Xamarin/NuGet/xamarin.android.support.versionedparcelable/28.0.0.3/proguard/monoandroid90" />
     <content url="file://$USER_HOME$/.nuget/packages/microsoft.net.test.sdk/16.5.0/build/netcoreapp2.1" />
     <content url="file://$USER_HOME$/.nuget/packages/microsoft.testplatform.testhost/16.5.0/build/netcoreapp2.1/x64/testhost.dll" />
     <content url="file://$USER_HOME$/.nuget/packages/microsoft.testplatform.testhost/16.5.0/build/netcoreapp2.1/x64/testhost.exe" />
@@ -65,6 +70,8 @@
     <content url="file://$USER_HOME$/.nuget/packages/xamarin.google.android.material/1.0.0/aar/com.google.android.material.material.aar" />
     <content url="file://$USER_HOME$/.nuget/packages/xamarin.google.android.material/1.0.0/proguard/proguard.txt" />
     <content url="file://$USER_HOME$/.nuget/packages/xamarin.google.guava.listenablefuture/1.0.0.2/buildTransitive/monoandroid50" />
+    <content url="file://$USER_HOME$/.nuget/packages/xamarin.googleplayservices.base/71.1610.0/proguard/MonoAndroid90/proguard.txt" />
+    <content url="file://$USER_HOME$/.nuget/packages/xamarin.googleplayservices.basement/71.1620.0/proguard/MonoAndroid90/proguard.txt" />
     <content url="file://$MODULE_DIR$/../.." />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

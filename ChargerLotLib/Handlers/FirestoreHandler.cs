@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using FirebaseAdmin;
 using Google.Apis.Auth.OAuth2;
 using Google.Apis.Util;
 using Google.Cloud.Firestore;
 using Google.Cloud.Firestore.V1;
+using Newtonsoft.Json.Linq;
 using WriteResult = Google.Cloud.Firestore.WriteResult;
 
 namespace ChargerLotLib.Handlers
@@ -36,11 +39,13 @@ namespace ChargerLotLib.Handlers
         
         private FirestoreHandler()
         {
-            
+            var stream = Assembly.GetExecutingAssembly()
+                .GetManifestResourceStream("ChargerLotLib.chargerlot-service-key.json");
+            //var assemblys = Assembly.GetExecutingAssembly().GetManifestResourceNames();
             _db = FirestoreDb.Create("chargerlot",
                 new FirestoreClientBuilder()
                 {
-                    CredentialsPath = "chargerlot-service-key.json"
+                    JsonCredentials = new StreamReader(stream).ReadToEnd()
                 }.Build()
             );
             Console.WriteLine("Created Cloud Firestore client with project ID: chargerlot");
@@ -69,7 +74,7 @@ namespace ChargerLotLib.Handlers
         /// FirestoreData attribute</exception>
         public Task<DocumentReference> AddData<T>(T data)
         {
-            if (data.GetType().GetCustomAttribute<FirestoreDataAttribute>() == null)
+            if (Utilities.GetCustomAttribute<FirestoreDataAttribute>(data.GetType()) == null)
             {
                 throw new ArgumentException("This type does not support Firestore Data!",
                     nameof(data));
@@ -90,7 +95,7 @@ namespace ChargerLotLib.Handlers
         /// FirestoreData attribute</exception>
         public Task<WriteResult> SetData<T>(T data, string document)
         {
-            if (data.GetType().GetCustomAttribute<FirestoreDataAttribute>() == null)
+            if (Utilities.GetCustomAttribute<FirestoreDataAttribute>(data.GetType()) == null)
             {
                 throw new ArgumentException("This type does not support Firestore Data!",
                     nameof(data));
