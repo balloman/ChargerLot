@@ -18,7 +18,7 @@ namespace ChargerLotLib.Handlers
     {
         private static FirestoreHandler _instance;
         private readonly FirestoreDb _db;
-        public string Collection { get; set; }
+        private string Collection { get; set; }
 
         /// <summary>
         /// Use this method to get the FirestoreHandler instance
