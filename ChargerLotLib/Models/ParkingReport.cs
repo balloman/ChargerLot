@@ -12,5 +12,7 @@ namespace ChargerLotLib.Models
         public DateTime Timestamp { get; set; }
         [FirestoreProperty]
         public string Lot { get; set; }
+        [FirestoreProperty]
+        public int EmptySpaces { get; set; }
     }
 }

@@ -14,7 +14,7 @@ namespace ChargerLotTests
         {
             var task = ReportController.ReportUserPark(new ParkingReport()
             {
-                Lot = "G5",
+                Lot = Lots.ParkingGarage.Id,
                 Timestamp = DateTime.UtcNow,
                 Uuid = "sampleuuid"
             });
@@ -23,6 +23,12 @@ namespace ChargerLotTests
             {
                 Assert.Fail();
             }
+        }
+
+        [TestMethod]
+        public void QueryTest()
+        {
+            var count = DataHandler.GetUserFilledLotData(Lots.ParkingGarage, 1);
         }
     }
 }
