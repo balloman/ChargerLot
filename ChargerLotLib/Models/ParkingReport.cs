@@ -13,6 +13,15 @@ namespace ChargerLotLib.Models
         [FirestoreProperty]
         public string Lot { get; set; }
         [FirestoreProperty]
-        public int EmptySpaces { get; set; }
+        public int FullnessFactor { get; set; }
+
+        public enum Fullness
+        {
+            Empty,
+            MostlyEmpty,
+            Moderate,
+            MostlyFull,
+            Full
+        }
     }
 }

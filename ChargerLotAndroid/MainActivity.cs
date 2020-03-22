@@ -7,7 +7,9 @@ using Android.Support.Design.Widget;
 using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
+using ChargerLotLib;
 using ChargerLotLib.Handlers;
+using ChargerLotLib.Models;
 
 namespace ChargerLotAndroid
 {
@@ -28,6 +30,14 @@ namespace ChargerLotAndroid
             fab.Click += FabOnClick;
         }
 
+        public void SendReport()
+        {
+            ReportController.ReportUserPark(new ParkingReport
+            {
+                
+            });
+        }
+        
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
             MenuInflater.Inflate(Resource.Menu.menu_main, menu);

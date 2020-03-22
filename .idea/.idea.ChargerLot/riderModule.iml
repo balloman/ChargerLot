@@ -7,6 +7,7 @@
     <content url="file://C:/Microsoft/Xamarin/NuGet/xamarin.android.support.compat/28.0.0.3/proguard/monoandroid90/proguard.txt" />
     <content url="file://C:/Microsoft/Xamarin/NuGet/xamarin.android.support.coordinaterlayout/28.0.0.3/proguard/monoandroid90/proguard.txt" />
     <content url="file://C:/Microsoft/Xamarin/NuGet/xamarin.android.support.design/28.0.0.3/proguard/monoandroid90/proguard.txt" />
+    <content url="file://C:/Microsoft/Xamarin/NuGet/xamarin.android.support.media.compat/28.0.0.3/proguard/monoandroid90/proguard.txt" />
     <content url="file://C:/Microsoft/Xamarin/NuGet/xamarin.android.support.transition/28.0.0.3/proguard/monoandroid90/proguard.txt" />
     <content url="file://C:/Microsoft/Xamarin/NuGet/xamarin.android.support.v7.appcompat/28.0.0.3/proguard/monoandroid90/proguard.txt" />
     <content url="file://C:/Microsoft/Xamarin/NuGet/xamarin.android.support.v7.recyclerview/28.0.0.3/proguard/monoandroid90/proguard.txt" />
@@ -15,6 +16,8 @@
     <content url="file://$USER_HOME$/.nuget/packages/mstest.testadapter/2.0.0/build/_common/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll" />
     <content url="file://$USER_HOME$/.nuget/packages/mstest.testadapter/2.0.0/build/_common/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll" />
     <content url="file://$USER_HOME$/.nuget/packages/mstest.testadapter/2.0.0/build/netcoreapp1.0/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll" />
+    <content url="file://$USER_HOME$/.nuget/packages/xamarin.googleplayservices.base/71.1610.0/proguard/MonoAndroid90/proguard.txt" />
+    <content url="file://$USER_HOME$/.nuget/packages/xamarin.googleplayservices.basement/71.1620.0/proguard/MonoAndroid90/proguard.txt" />
     <content url="file://$MODULE_DIR$/../.." />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
